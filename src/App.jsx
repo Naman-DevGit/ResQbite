@@ -1,4 +1,5 @@
 // import Home from "./pages/Home"
+import HeroSection from "./components/home/HeroSection"
 import Navbar from "./components/layout/Navbar"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       {/* <Home/> */}
       <Navbar/>
+      <HeroSection/>
     </>
   )
 }
