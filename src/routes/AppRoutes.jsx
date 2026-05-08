@@ -9,6 +9,7 @@ import Home from "../pages/Home";
 // import Deals from "../pages/Deals";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import ContactUs from "../pages/ContactUs";
 // import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
@@ -30,6 +31,7 @@ const AppRoutes = () => {
 
             {/* Login Page */}
             <Route path="/login" element={<Login />} />
+            <Route path="/contact" element={<ContactUs/>} />
 
             {/* Signup Page */}
             <Route path="/signup" element={<Signup />} />

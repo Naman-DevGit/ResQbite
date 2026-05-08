@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebookF,FaInstagram,FaYoutube} from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -41,9 +42,12 @@ function Footer() {
                         <li className='flex items-center gap-2 hover:translate-x-1 transition'> <FaChevronRight size = {10} /> 
                         
                         How It Works</li>
-                        <li className='flex items-center gap-2 hover:translate-x-1 transition'> <FaChevronRight size = {10} /> 
-                        
-                        Contact Us</li>
+                       <li className='flex items-center gap-2 hover:translate-x-1 transition'>
+                          <FaChevronRight size={10} />
+                          <Link to="/contact">
+                            Contact Us
+                          </Link>
+                        </li>
                         <li className='flex items-center gap-2 hover:translate-x-1 transition'> <FaChevronRight size = {10} /> 
                         
                         FAQs</li>
