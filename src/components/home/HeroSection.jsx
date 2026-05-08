@@ -1,8 +1,9 @@
 import React from 'react'
-
+import ImpactSection from './ImpactSection';
 import resqbite from "../Assets/Images/resQbite.png";
 function HeroSection() {
   return (
+    <>
     <section className="relative min-h-screen bg-white text-black overflow-hidden">
       
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20">
@@ -39,7 +40,9 @@ function HeroSection() {
         <img src={resqbite} className='w-95 ' alt="empty" />
         </div>
       </div>
+    <ImpactSection/> 
     </section>
+    </>
   )
 }
 
