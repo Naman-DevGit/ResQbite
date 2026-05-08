@@ -13,7 +13,7 @@ function HeroSection() {
           <p className="text-orange-400 text-sm mb-3">
             Affordable and very filling
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight ">
             Hot, fresh{" "}
             <span className="text-orange-500">Food</span>
             <br />
@@ -25,11 +25,11 @@ function HeroSection() {
 
           {/* Buttons */}
           <div className="flex gap-4 mt-6">
-            <button  class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg  hover:shadow-yl hover:shadow-black/90 hover:scale-105 hover:text-black transition duration-300">
+            <button  class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg  hover:shadow-yl hover:shadow-white/5 hover:scale-105 hover:text-black transition duration-300">
               Pickup Order
             </button>
 
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg  hover:shadow-yl hover:shadow-black/90 hover:scale-105 hover:text-black transition duration-300">
+            <button className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg  hover:shadow-yl hover:shadow-white/5 hover:scale-105 hover:text-black transition duration-300">
               See Available Food
             </button>
           </div>

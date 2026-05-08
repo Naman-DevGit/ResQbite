@@ -1,32 +1,75 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../Assets/Logos/logoFinal.png";
+
 const Navbar = () => {
   return (
-    <>
-      <header class='bg-[#000000]'>
-        <nav className="flex justify-between items-center px-4 py-0.5 ">
-          <div className="flex items-center gap-0">
-            <div className='relative w-25 h-15 overflow-visible'>
-              <img
-                src={logo}
-                alt="logo"
-                className="absolute top-[50%] left-[50%] w-25 h-25 translate-[-50%] translate-y-[-40%]"
-              />
-            </div>
-            <span className="text-2xl font-semibold text-orange-500">
-              ResQbite
-            </span>
-          </div>
-          <div className="flex items-center gap-5 font-medium">
-            <a href="#" className='text-white'>HOME</a>
-            <a href='#' className='text-white'>ABOUT US</a>
-            <a href='#' className='text-white'>CONTACT US</a>
-            <a href='#' className='text-white'>LOGIN</a>
-          </div>
-        </nav>
-      </header>
-    </>
-  )
-}
+    <header className="bg-black shadow-md sticky top-0 z-50">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
 
-export default Navbar
+        {/* Logo Section */}
+        <div className="flex items-center gap-2">
+          <div className="relative w-16 h-16 overflow-visible">
+            <img
+              src={logo}
+              alt="ResQbite Logo"
+              className="absolute top-1/2 left-1/2 w-20 h-20 -translate-x-1/2 -translate-y-[45%] object-contain"
+            />
+          </div>
+
+          <h1 className="text-3xl font-bold text-orange-500 tracking-wide">
+            ResQbite
+          </h1>
+        </div>
+
+        {/* Navigation Links */}
+        <div className="hidden md:flex items-center gap-8 font-medium text-sm">
+
+          <Link
+            to="/"
+            className="text-white hover:text-orange-400 transition duration-300"
+          >
+            HOME
+          </Link>
+
+          <Link
+            to="/about"
+            className="text-white hover:text-orange-400 transition duration-300"
+          >
+            ABOUT US
+          </Link>
+
+          <Link
+            to="/contact"
+            className="text-white hover:text-orange-400 transition duration-300"
+          >
+            CONTACT US
+          </Link>
+
+          <Link
+            to="/deals"
+            className="text-white hover:text-orange-400 transition duration-300"
+          >
+            DEALS
+          </Link>
+
+          {/* Login Button */}
+          <Link
+            to="/login"
+            className="hover:bg-orange-600 text-white px-5 py-2 rounded-full transition duration-300"
+          >
+            LOGIN
+          </Link>
+        </div>
+
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden text-white text-3xl cursor-pointer">
+          ☰
+        </div>
+
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;
