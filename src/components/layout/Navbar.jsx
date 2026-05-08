@@ -5,7 +5,7 @@ import logo from "../Assets/Logos/logoFinal.png";
 const Navbar = () => {
   return (
     <header className="bg-black shadow-md sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <nav className="max-w-8xl mx-auto flex justify-between items-center px-6 py-3">
 
         {/* Logo Section */}
         <div className="flex items-center gap-2">
@@ -17,7 +17,7 @@ const Navbar = () => {
             />
           </div>
 
-          <h1 className="text-3xl font-bold text-orange-500 tracking-wide">
+          <h1 className="text-3xl font-bold text-orange-500 tracking-wide ">
             ResQbite
           </h1>
         </div>
